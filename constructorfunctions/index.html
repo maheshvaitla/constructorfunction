@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+ /*// CONSTRUCTOR FUNCTION
+
+ function player(n,t){
+     this.name=n,
+     this.team=t
+ };
+
+ 
+ var myPlayer = new player("Ms Dhoni", "Chennai Super Kings");
+ var myPlayer2 = new player("Virat Kohli", "Royal Challengers Banglore");
+
+ console.log("myPlayer", myPlayer);
+ console.log("myPlayer", myPlayer2);
+
+
+
+ // */
+
+ /* // CALL METHOD
+
+ var person={
+     name:"mahesh"
+ }
+
+ var person2={
+     name:"vaitla"
+ }
+
+ function myName(m){
+     this.age=m
+     console.log(this.name, m);
+  }
+
+  myName.call(person2, 21);
+  console.log(person2);
+ // */
+
+
+
+  /* // APPLY METHOD
+
+ var person={
+     name:"mahesh"
+ }
+
+ var person2={
+     name:"vaitla"
+ }
+
+ function myName(m,c){
+     this.age=m
+     this.city=c
+     console.log(this.name, m,c);
+  }
+
+  myName.apply(person2,  [21, "hyderabad"]);
+  console.log(person2);
+ // */
+
+
+
+  /* // BIND METHOD
+
+ var person={
+     name:"mahesh"
+ }
+
+ var person2={
+     name:"vaitla"
+ }
+
+ function myName(m,c){
+     this.age=m
+     this.city=c
+     console.log(this.name, m,c);
+  }
+
+  var myBind = myName.bind(person2, 21, "hyderabad");
+  myBind();
+  console.log(person2);
+ // */
+
+/* NEWSPAPER PUBLISH USING CONSTRUCTOR FUNCTION
+
+ function newspaper(n){
+     this.headline="CSK won ipl trophy 2021",
+     this.date= new Date().getDay();
+     this.id = Math.random()*10,
+     this.name=n
+  }
+
+  let i=0;
+  while(i<10){
+
+  let news= new newspaper("Times of India");
+  console.log(news);
+  i++
+  }
+   }
+  //
+  */
+
+     /*  //  ANOTHER CAL FUNCTION
+  let person ={
+      name: "mahesh",
+      nickname: "mai",
+
+      shownickname(){
+        this.nickname;
+      },
+
+  };
+
+  let person2 = {
+      name: "sandeep",
+      nickaname: "sandy", 
+  };
+
+  person.shownickname.call(person2);
+
+  console.log(person2);
+
+   */ //
+
+
+   /*   Call, Aplly Bind
+
+   function person(n, a){
+       this.name=n;
+       this.age=a;
+       this.similarity="Masai School"
+   }
+
+   function teacher(s, n, a){
+
+    person.call(this, n,a);
+
+    this.subject =s
+   }
+  
+   function student(n,a){
+       person.apply(this, [n, a]);
+
+       this.class= "10th";
+   }
+
+   function player(n, a){
+     let x = person.bind(this, n, a)
+     x();
+
+    this.sport="cricket";
+   }
+
+
+   let t1 = new teacher("Dom", "nrupul", 36);
+
+   let s1 = new student("vushal", 18);
+
+   var p1 =  new player("dhoni", 34);
+   console.log(t1)
+   console.log(s1);
+   console.log(p1);
+
+   */
+
+</script>
